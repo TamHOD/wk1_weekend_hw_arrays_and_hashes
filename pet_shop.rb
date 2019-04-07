@@ -60,3 +60,7 @@ def remove_customer_cash(customer, amount)
   customer_cash = customer[:cash] -= amount
   return customer_cash
 end
+
+def customer_pet_count(customer)
+  return customer[:pets].length
+end
