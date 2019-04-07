@@ -111,16 +111,13 @@ def find_pet_by_name(shop, name)
   return pet_name[0]
 end
 
-
-
-
-# def remove_pet_by_name(shop, name)
-#   for pet in shop[:pets]
-#     if pet[:name] == name
-#       pet.delete
-#     end
-#   end
-# end
+def remove_pet_by_name(shop, name)
+  for pet in shop[:pets]
+    if pet[:name] == name
+      shop[:pets].delete(pet)
+    end
+  end
+end
 
 def add_pet_to_stock(shop, pet)
   shop[:pets] << pet
