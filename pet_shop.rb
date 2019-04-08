@@ -148,3 +148,10 @@ def customer_can_afford_pet(customer, pet)
     return false
   end
 end
+
+def sell_pet_to_customer(shop, pet, customer)
+  customer_pet_count(customer)
+  pets_sold(shop)
+  customer_cash(customer)
+  total_cash(shop)
+end
